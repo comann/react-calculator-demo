@@ -20,10 +20,24 @@ function App() {
           Learn React
         </a>
 
-        <Button text="Hello Buttons!" />
+        <Button text="0" value ={0} onClick={handleButtonClick} />
+        <Button text="1" value ={1} onClick={handleButtonClick} />
+        <Button text="2" value ={2} onClick={handleButtonClick} />
+        <Button text="3" value ={3} onClick={handleButtonClick} />
+        <Button text="4" value ={4} onClick={handleButtonClick} />
+        <Button text="5" value ={5} onClick={handleButtonClick} />
+        <Button text="6" value ={6} onClick={handleButtonClick} />
+        <Button text="7" value ={7} onClick={handleButtonClick} />
+        <Button text="8" value ={8} onClick={handleButtonClick} />
+        <Button text="9" value ={9} onClick={handleButtonClick} />
       </header>
     </div>
   );
+}
+ 
+function handleButtonClick(value) {
+  alert(value)
+  
 }
 
 export default App;
