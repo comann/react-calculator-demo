@@ -13,7 +13,12 @@ const styles = {
   }
 }
 
+const onButtonClick = (onClick, value) => () => {
+onClick(value);
+}
+
 //Button.js
 export default function Button(props) {
-  return <div style={styles.button}> {props.text} </div>
-}
+  return <div onClick={() => {props.onClick(props.value)}} style={styles.button}> {props.text} </div>
+
+};
