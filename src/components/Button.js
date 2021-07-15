@@ -12,6 +12,10 @@ const styles = {
   }
 }
 
+const onButtonClick = (onClick, value) => () => {
+onClick(value);
+}
+
 //Button.js
 export default function Button(props) {
   return <HoverContainer>
