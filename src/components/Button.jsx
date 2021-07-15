@@ -2,14 +2,17 @@ import HoverContainer from "./Hoverable"
 
 const styles = {
   button: {
-    display: 'inline-block',
+    display: 'flex',
+    alignItems: "center",
+    justifyContent: "center",
     borderRadius: '3px',
-    padding: '0.5rem 0',
-    margin: '0.5rem 1rem',
-    width: '11rem',
-    background: 'transparent',
-    color: 'white',
-    border: '2px solid white',
+    margin: 6,
+    width: 50,
+    height: 50,
+    background: 'white',
+    color: 'black',
+    border: '2px solid white'
+    
   }
 }
 
