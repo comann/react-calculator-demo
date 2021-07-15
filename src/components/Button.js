@@ -1,4 +1,4 @@
-
+import HoverContainer from "./Hoverable"
 const styles = {
   button: {
     display: 'inline-block',
@@ -9,11 +9,13 @@ const styles = {
     background: 'transparent',
     color: 'white',
     border: '2px solid white',
-
   }
 }
 
 //Button.js
 export default function Button(props) {
-  return <div style={styles.button}> {props.text} </div>
+  return <HoverContainer>
+    <div style={styles.button}> {props.text} </div>
+  </HoverContainer>
 }
+
