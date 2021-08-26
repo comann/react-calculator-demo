@@ -18,7 +18,7 @@ const styles = {
 
 //Button.js
 export default function Button(props) {
-  return <HoverContainer>
+  return <HoverContainer onClick={() => props.onClick(props.value)}>
     <div style={styles.button}> {props.text} </div>
   </HoverContainer>
 }

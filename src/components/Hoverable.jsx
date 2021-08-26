@@ -1,10 +1,10 @@
 import * as React from 'react'
 
 
-export default function HoverContainer({children}) {
+export default function HoverContainer({children, onClick}) {
   const [isHovering, setIsHovering] = React.useState(false);
-  console.log('isHover: ', isHovering);
-  return <div  
+  return <div 
+    onClick={onClick}
     onMouseEnter={() => setIsHovering(true)} 
     onMouseLeave={() => setIsHovering(false)} 
     style={{ 
