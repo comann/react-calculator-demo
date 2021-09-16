@@ -29,7 +29,7 @@ function App() {
     <div style={{display: 'flex', alignItems: 'center', justifyContent:'center', flexDirection: "column"}}>
       <img src={logo} className="App-logo" alt="logo" />
       <NumericPad>
-        { tiles.map(x => <Button {...x} onClick={utils.onUserInput} />) }
+        { tiles.map(x => <Button key={x.text} {...x} onClick={utils.onUserInput} />) }
         </NumericPad>
       
       
