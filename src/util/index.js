@@ -24,7 +24,7 @@ const util = {
 
     }else if(value === DIVISION){
 
-    } else if(value === EQUALS){
+    } else if(value === SUBMIT){
       while(queue.length > 0){
         console.log(queue.shift())
       }
@@ -37,5 +37,18 @@ const util = {
 
   }
 }
+
+
+function convertNumber(arr) {
+  console.log('input is ', arr);
+  let output = 0;
+
+
+  console.log('output is ', output)
+
+  return output
+}
+
+convertNumber([1,5,3])
 
 export default util
