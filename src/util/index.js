@@ -1,16 +1,15 @@
 
 const queue = []
-const PRODUCT= '*';
-const  DECIMAL= '.';
-  const DIVISION= '/'
-  const SUBTRACTION= '-';
-  const ADDITION= '+';
-  const EQUALS ='=';
 
-export default {
-  PRODUCT, DECIMAL, DIVISION,SUBTRACTION,ADDITION,EQUALS,
+const PRODUCT = '*';
+const DECIMAL = '.';
+const DIVISION = '/'
+const SUBTRACTION = '-';
+const ADDITION = '+';
+const EQUALS = '=';
 
-
+const util = {
+  PRODUCT, DECIMAL, DIVISION, SUBTRACTION, ADDITION, EQUALS,
 
   onUserInput(value) {
     if(value !== EQUALS){
@@ -38,3 +37,5 @@ export default {
 
   }
 }
+
+export default util
