@@ -6,13 +6,13 @@ const DECIMAL = '.';
 const DIVISION = '/'
 const SUBTRACTION = '-';
 const ADDITION = '+';
-const EQUALS = '=';
-
+const SUBMIT = '=';
+const CLEAR = 'CE'
 const util = {
-  PRODUCT, DECIMAL, DIVISION, SUBTRACTION, ADDITION, EQUALS,
+  PRODUCT, DECIMAL, DIVISION, SUBTRACTION, ADDITION, SUBMIT, CLEAR,
 
   onUserInput(value) {
-    if(value !== EQUALS){
+    if(value !== SUBMIT){
       queue.push(value)
     }
 
